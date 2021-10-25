@@ -190,7 +190,7 @@ public class Display {
     }
     public static void display7WriteToFile() throws IOException {
         Scanner scannerLine = new Scanner(System.in);
-        System.out.println("Do you want to write, input y to continue");
+        System.out.println("Do you want to write, this function will delete all data in file, input y to continue");
         String y = scannerLine.nextLine();
         if (y.equals("Y") || y.equals("y")) {
             WriteFile writeFile = WriteFile.getInstance();
