@@ -184,6 +184,7 @@ public class Display {
         if(y.equals("Y") || y.equals("y")){
             ReadFile readFile = ReadFile.getInstance();
             phoneBookManager.setPhoneBookArrayList(readFile.readFile());
+            System.out.println("Read success");
             return;
         }
         System.out.println("Not read file yet");
@@ -195,7 +196,10 @@ public class Display {
         if (y.equals("Y") || y.equals("y")) {
             WriteFile writeFile = WriteFile.getInstance();
             writeFile.writeFile(phoneBookManager);
+            System.out.println("Write success");
+            return;
         }
+        System.out.println("Not write file yet");
     }
 
     public static boolean checkRegex(String regex,String check){
