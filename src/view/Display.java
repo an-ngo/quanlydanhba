@@ -13,7 +13,7 @@ import java.util.regex.Pattern;
 public class Display {
     static PhoneBookManager phoneBookManager = new PhoneBookManager();
     static String phoneNumberRegex = "^[0-9]{9,12}$";
-    static String emailRegex = "^[\\w]+@[\\w\\.]+[\\w]";
+    static String emailRegex = "^[\\w]+@[\\w\\.]+[\\w]$";
     public static void displayMenu() throws IOException, ClassNotFoundException {
         System.out.println("-----------------------------------------");
         System.out.println("Chon chuc nang theo so (de tiep tuc)");
@@ -25,6 +25,7 @@ public class Display {
         System.out.println("6: Doc tu file");
         System.out.println("7: Ghi vao file");
         System.out.println("8: Thoat");
+        System.out.println("-----------------------------------------");
         System.out.println("Chon chuc nang");
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
